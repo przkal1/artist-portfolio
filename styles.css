@@ -1,0 +1,115 @@
+body {
+    padding-top: 10px;
+    font-family: 'Basic', sans-serif;
+    overflow-y: scroll;
+    background-color: #fff8ea !important;
+    background-image: url("img/content/bcg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.top-bar {
+    font-size: 5em;
+    padding: 5px;
+}
+
+@font-face {
+    font-family: Scriptina_Pro;
+    src: url(Scriptina_Pro.otf);
+}
+
+.top-bar > span {
+    width: 100%;
+    font-family: Scriptina_Pro;
+}
+
+.top-bar > span:last-child {
+    padding-left:40px;
+}
+
+.top-bar > a {
+    float: right
+}
+
+
+.gallery-description{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 20px;
+}
+
+
+
+.lg-outer .lg-thumb-outer {
+    text-align: center;
+}
+.lg-thumb.lg-group {
+    display: inline-block;
+}
+
+.list-unstyles {
+    list-style: none;
+}
+
+a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  -ms-transition: -ms-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  width: 100%;
+}
+
+a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  -ms-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+
+a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  -ms-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.0s ease 0s;
+  -o-transition: opacity 0.0s ease 0s;
+  -ms-transition: opacity 0.0s ease 0s;
+  transition: opacity 0.0s ease 0s;
+}
+
+a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+

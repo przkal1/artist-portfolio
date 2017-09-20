@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monika Krasoń - Contemporary Artist</title>
+        <link href="css/lightgallery.css" rel="stylesheet">
+        <link href="css/justifiedGallery.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="monotyphy.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" role="main">
+            <div class="top-bar"  href="main.html">
+                <span>Monika</span>
+                <span>Krasoń</span>
+            </div>
+            <div class="gallery-description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            </div>
+            <div id="lightgallery">
+                <a href="img/content/monotyphy/mon1.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon1.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+                
+                <a href="img/content/monotyphy/mon2.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon2.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+
+                <a href="img/content/monotyphy/mon3.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon3.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+                
+                <a href="img/content/monotyphy/mon4.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon4.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+                
+                <a href="img/content/monotyphy/mon5.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon5.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+                
+                <a href="img/content/monotyphy/mon6.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon6.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+
+                <a href="img/content/monotyphy/mon7.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon7.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+                
+                <a href="img/content/monotyphy/mon8.jpg">
+                    <img class="img-responsive" src="img/content/monotyphy/mon8.jpg">
+                    <div class="demo-gallery-poster">
+                        <img src="img/zoom.png">
+                    </div>
+                </a>
+            </div>
+           
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/lightgallery.min.js"></script>
+            <script src="js/lg-thumbnail.min.js"></script>
+            <script src="js/jquery.justifiedGallery.min.js"></script>
+
+            <script type="text/javascript">     
+            $( document ).ready(function() {
+                var $animThumb = $('#lightgallery');
+                if ($animThumb.length) {
+                    $animThumb.justifiedGallery({
+                        border: 6,
+                        captions: true,
+                        margins: 10,
+                        rowHeight: 280
+                    }).on('jg.complete', function() {
+                        $animThumb.lightGallery({
+                            thumbnail: true
+                        });
+                    });
+                };
+            });
+            </script>
+        </div>
+    </body>
+</html>

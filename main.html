@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monika Krasoń - Contemporary Artist</title>
+        <link href="css/lightgallery.css" rel="stylesheet">
+        <link href="css/justifiedGallery.min.css" rel="stylesheet">
+        
+        <link href="styles.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" role="main">
+            <div class="top-bar">
+                <span>Monika</span>
+                <span>Krasoń</span>
+            </div>
+        
+            <div id="lightgallery">
+                <a href="monotyphy.html">
+                    <img class="img-responsive" src="img/content/monotyphy_thb.jpg">
+                    <div class="main-gallery-poster">
+                        <span>Monotyphy</span>
+                    </div>
+                </a>
+                
+                <a href="img/content/shop_graphics.jpg">
+                    <img class="img-responsive" src="img/content/shop_graphics_thb.jpg">
+                    <div class="main-gallery-poster">
+                        <span>Shop graphics</span>
+                    </div>
+                </a>
+
+                <a href="img/content/paintings.jpg">
+                    <img class="img-responsive" src="img/content/paintings_thb.jpg">
+                    <div class="main-gallery-poster">
+                        <span>Paintings</span>
+                    </div>
+                </a>
+                
+                <a href="img/content/factural.jpg">
+                    <img class="img-responsive" src="img/content/factural_thb.jpg"">
+                    <div class="main-gallery-poster">
+                        <span>Factural</span>
+                    </div>
+                </a>
+                
+                <a href="img/content/collagraphy.jpg">
+                    <img class="img-responsive" src="img/content/collagraphy_thb.jpg" >
+                    <div class="main-gallery-poster">
+                        <span>Collagraphy</span>
+                    </div>
+                </a>
+                
+                <a href="img/content/arche.jpg">
+                    <img class="img-responsive" src="img/content/arche_thb.jpg">
+                    <div class="main-gallery-poster">
+                        <span>Arche</span>
+                    </div>
+                </a>
+            </div>
+           
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/lightgallery.min.js"></script>
+            <script src="js/lg-thumbnail.min.js"></script>
+            <script src="js/jquery.justifiedGallery.min.js"></script>
+
+            <script type="text/javascript">     
+            $( document ).ready(function() {
+                var $animThumb = $('#lightgallery');
+                if ($animThumb.length) {
+                    $animThumb.justifiedGallery({
+                        border: 6,
+                        captions: true,
+                        margins: 10,
+                        rowHeight: 300
+                    }).on('jg.complete', function() {
+
+                    });
+                };
+            });
+            </script>
+        </div>
+    </body>
+</html>

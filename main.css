@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 320px;
+    }
+}
+
+a .main-gallery-poster > span {
+ font-size: 2em;
+ color: #ffffff;
+}
+
+a:hover .main-gallery-poster > span {
+  opacity: 1;
+}
+
+a .main-gallery-poster {
+      background-color: rgba(0, 0, 0, 0.1);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+      /*So that inner div with text is in the middle*/
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      
+      -webkit-transition: background-color 0.15s ease 0s;
+      -o-transition: background-color 0.15s ease 0s;
+      -ms-transition: background-color 0.15s ease 0s;
+      transition: background-color 0.15s ease 0s;
+}
+
+a .main-gallery-poster > span {
+    width: 100%;
+    text-align:center;
+    opacity: 0;
+  
+    -webkit-transition: opacity 0.15s ease 0s;
+    -o-transition: opacity 0.15s ease 0s;
+    -ms-transition: opacity 0.15s ease 0s;
+    transition: opacity 0.15s ease 0s;
+}
+
+a:hover .main-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
