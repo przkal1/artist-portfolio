@@ -35,7 +35,8 @@ body {
 .gallery-description{
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    padding: 5px 10px;
 }
 
 
