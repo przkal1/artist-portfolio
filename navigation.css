@@ -16,11 +16,17 @@ nav.cmn-tile-nav li {
 nav.cmn-tile-nav a {
   display: block;
   padding: 20px;
+  font-size: 1.5em;
   color: #fff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   transition: background 0.3s, transform 0.3s;
 }
 nav.cmn-tile-nav a:hover {
   transform: translateX(20px);
+}
+
+nav.cmn-tile-nav  a {
+    text-decoration: none;
 }
 
 /* repeat this section for the 8 different colours */
@@ -79,7 +85,6 @@ nav.cmn-tile-nav li.colour-6:hover a {
   background-color: #166888;
 }
 
-
 /* smoother transitions */
 nav.cmn-tile-nav li,
 nav.cmn-tile-nav a {
@@ -102,7 +107,7 @@ nav.cmn-tile-nav a {
   }
   nav.cmn-tile-nav a {
     text-align: center;
-    padding: 60px 20px 20px 20px;
+    padding: 40px 20px 30px 20px;
   }
   nav.cmn-tile-nav a:hover {
     transform: translateX(0);
@@ -121,7 +126,7 @@ nav.cmn-tile-nav a {
   }
 
   nav.cmn-tile-nav a {
-    padding: 60px 20px 20px 20px;
+    padding: 40px 5px 30px 5px;
   }
   nav.cmn-tile-nav a:hover {
     transform: translateY(20px);
