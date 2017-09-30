@@ -2,35 +2,10 @@ body {
     padding-top: 10px;
     font-family: 'Basic', sans-serif;
     overflow-y: scroll;
-    background-color: #fff8ea !important;
-    background-image: url("img/content/bcg.jpg");
+/*     background-image: url("img/content/bcg.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
-
-.top-bar {
-    font-size: 5em;
-    padding: 5px;
-}
-
-@font-face {
-    font-family: Scriptina_Pro;
-    src: url(Scriptina_Pro.otf);
-}
-
-.top-bar > span {
-    width: 100%;
-    font-family: Scriptina_Pro;
-}
-
-.top-bar > span:last-child {
-    padding-left:40px;
-}
-
-.top-bar > a {
-    float: right
-}
-
 
 .gallery-description{
     text-align: justify;
@@ -38,8 +13,6 @@ body {
     font-size: 1.2em;
     padding: 5px 10px;
 }
-
-
 
 .lg-outer .lg-thumb-outer {
     text-align: center;
@@ -52,7 +25,7 @@ body {
     list-style: none;
 }
 
-a > img {
+.gallery a > img {
   -webkit-transition: -webkit-transform 0.15s ease 0s;
   -moz-transition: -moz-transform 0.15s ease 0s;
   -o-transition: -o-transform 0.15s ease 0s;
@@ -63,17 +36,17 @@ a > img {
   width: 100%;
 }
 
-a:hover > img {
+.gallery a:hover > img {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   -ms-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
 
-a:hover .demo-gallery-poster > img {
+.gallery a:hover .demo-gallery-poster > img {
   opacity: 1;
 }
 
-a .demo-gallery-poster {
+.gallery a .demo-gallery-poster {
   background-color: rgba(0, 0, 0, 0.1);
   bottom: 0;
   left: 0;
@@ -86,7 +59,7 @@ a .demo-gallery-poster {
   transition: background-color 0.15s ease 0s;
 }
 
-a .demo-gallery-poster > img {
+.gallery a .demo-gallery-poster > img {
   left: 50%;
   margin-left: -10px;
   margin-top: -10px;
@@ -99,16 +72,33 @@ a .demo-gallery-poster > img {
   transition: opacity 0.0s ease 0s;
 }
 
-a:hover .demo-gallery-poster {
+.gallery a:hover .demo-gallery-poster {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.logo-container {
+    background-color: black;
+}
+
+.logo-container img {
+    display: block;
+    margin: auto;
+}
+
+@media all and (min-width: 768px) {
+    .logo-container {
+        float:left;
+        width: 25%;
+    }
+}
 
 
-
-
-
-
+.creation {
+    font-size: 1.5em;
+    color: #7B7B7B;
+    text-align: center;
+    padding-top: 100px;
+}
 
 
 

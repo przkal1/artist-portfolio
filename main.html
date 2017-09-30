@@ -7,17 +7,13 @@
         
         <link href="styles.css" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
+        <link href="navigation.css" rel="stylesheet">
                 
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container" role="main">
-            <div class="top-bar">
-                <span>Monika</span>
-                <span>Krasoń</span>
-            </div>
-        
-            <div id="lightgallery">
+        <div class="container" role="main">    
+            <div id="lightgallery" class="gallery">
                 <a href="art.html">
                     <img class="img-responsive" src="img/content/main/art.jpg">
                     <div class="main-gallery-poster">
@@ -25,7 +21,7 @@
                     </div>
                 </a>
 
-                <a href="about_me.html">
+                <a href="aboutme.html">
                     <img class="img-responsive" src="img/content/main/about_me.jpg">
                     <div class="main-gallery-poster">
                         <span>ABOUT ME<span>
@@ -53,7 +49,7 @@
                     </div>
                 </a>
                 
-                <a href="interior.html">
+                <a href="contact.html">
                     <img class="img-responsive" src="img/content/main/contact.jpg">
                     <div class="main-gallery-poster">
                         <span>CONTACT</span>
@@ -68,10 +64,11 @@
 
             <script type="text/javascript">     
             $( document ).ready(function() {
+            
                 var $animThumb = $('#lightgallery');
                 if ($animThumb.length) {
                     $animThumb.justifiedGallery({
-                        border: 6,
+                        border: 0,
                         captions: true,
                         margins: 10,
                         rowHeight: 300
