@@ -2,9 +2,6 @@ body {
     padding-top: 10px;
     font-family: 'Basic', sans-serif;
     overflow-y: scroll;
-/*     background-image: url("img/content/bcg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
 }
 
 .gallery-description{
@@ -76,31 +73,9 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.logo-container {
-    background-color: black;
-}
-
-.logo-container img {
-    display: block;
-    margin: auto;
-}
-
-@media all and (min-width: 768px) {
-    .logo-container {
-        float:left;
-        width: 25%;
-    }
-}
-
-
 .creation {
     font-size: 1.5em;
     color: #7B7B7B;
     text-align: center;
     padding-top: 100px;
 }
-
-
-
-
-

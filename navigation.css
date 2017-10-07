@@ -103,11 +103,11 @@ nav.cmn-tile-nav a {
 
 @media all and (min-width: 768px) {
   nav.cmn-tile-nav li {
-    width: 25%;
+    width: 20%;
   }
   nav.cmn-tile-nav a {
     text-align: center;
-    padding: 40px 20px 30px 20px;
+    padding: 40px 5px 30px 5px;
   }
   nav.cmn-tile-nav a:hover {
     transform: translateX(0);
@@ -115,14 +115,14 @@ nav.cmn-tile-nav a {
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1200px) {
   nav.cmn-tile-nav  {
     margin-bottom: 40px;
   }  
   
   nav.cmn-tile-nav li {
     overflow: visible;
-    width: 12.5%;
+    width: 12%;
   }
 
   nav.cmn-tile-nav a {
@@ -135,11 +135,8 @@ nav.cmn-tile-nav a {
 
 a.nav-toggle {
   display: block;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #dce6f0;
-  color: #646464;
   text-align: center;
+  float:right;
 }
 a.nav-toggle:hover {
   background-color: #c8d2dc;
@@ -149,4 +146,8 @@ a.nav-toggle:hover {
   a.nav-toggle {
     display: none;
   }
+}
+
+.glyphicon-menu-hamburger {
+  font-size: npx;
 }
