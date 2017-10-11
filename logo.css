@@ -1,24 +1,28 @@
-/* .logo-container {
-    min-height: 100px;
-}
- */
 .logo-container {
     display:block;
 }
-.logo {
-    background-image: url("img/content/logo_horizontal.png");
-    height: 100px;
-    width: 300px;
-    margin: auto;
-    float:left;
+
+.normal-logo {
+    display: none;
 }
 
+.horizontal-logo {
+    /*display: block;
+    margin: auto;*/
+}
 
 @media all and (min-width: 768px) {
     .logo-container {
         float:left;
         width: 40%;
         min-height: 200px;
+    }
+    
+    .normal-logo  {
+        display: block;
+    }
+    .horizontal-logo  {
+        display: none;
     }
     
     .logo {
