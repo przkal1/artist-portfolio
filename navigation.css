@@ -21,6 +21,7 @@ nav.cmn-tile-nav a {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   transition: background 0.3s, transform 0.3s;
 }
+
 nav.cmn-tile-nav a:hover {
   transform: translateX(20px);
 }
@@ -85,6 +86,14 @@ nav.cmn-tile-nav li.colour-6:hover a {
   background-color: #166888;
 }
 
+nav.cmn-tile-nav li.colour-7,
+nav.cmn-tile-nav li.colour-7 a {
+  background-color: #0D002C;
+}
+nav.cmn-tile-nav li.colour-7:hover,
+nav.cmn-tile-nav li.colour-7:hover a {
+  background-color: #0D002C;
+}
 /* smoother transitions */
 nav.cmn-tile-nav li,
 nav.cmn-tile-nav a {
@@ -103,12 +112,23 @@ nav.cmn-tile-nav a {
 
 @media all and (min-width: 768px) {
   nav.cmn-tile-nav li {
+    width: 16.66%;
+  }
+
+  nav.cmn-tile-nav.nav-sub li {
     width: 20%;
   }
+
   nav.cmn-tile-nav a {
     text-align: center;
-    padding: 40px 5px 30px 5px;
+    padding: 20px 5px 15px 5px;
+    font-size: 1em;
   }
+
+  nav.cmn-tile-nav.nav-sub a {
+    padding: 5px 5px 5px 5px;
+  }
+
   nav.cmn-tile-nav a:hover {
     transform: translateX(0);
     transform: translateY(-20px);
@@ -118,18 +138,32 @@ nav.cmn-tile-nav a {
 @media all and (min-width: 1200px) {
   nav.cmn-tile-nav  {
     margin-bottom: 40px;
-  }  
-  
+  }
+
   nav.cmn-tile-nav li {
     overflow: visible;
-    width: 12%;
+    width: 16.66%;
+  }
+
+  nav.cmn-tile-nav.nav-sub li {
+    width: 20%;
   }
 
   nav.cmn-tile-nav a {
     padding: 40px 5px 30px 5px;
+    font-size: 1.5em;
   }
+
+  nav.cmn-tile-nav.nav-sub a {
+    padding: 5px 5px 5px 5px;
+  }
+
   nav.cmn-tile-nav a:hover {
     transform: translateY(20px);
+  }
+
+  nav.cmn-tile-nav.nav-sub a:hover {
+    transform: translateY(10px);
   }
 }
 

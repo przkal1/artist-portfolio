@@ -4,7 +4,25 @@ body {
     overflow-y: scroll;
 }
 
-.gallery-description{
+.main-container {
+  width: 85%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-container {
+  width: 100%
+}
+
+.gallery-description {
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.2em;
