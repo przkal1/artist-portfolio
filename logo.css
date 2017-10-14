@@ -11,20 +11,27 @@
     margin: auto;*/
 }
 
+.logo-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media all and (min-width: 768px) {
     .logo-container {
         float:left;
         width: 40%;
         min-height: 200px;
     }
-    
+
     .normal-logo  {
         display: block;
     }
     .horizontal-logo  {
         display: none;
     }
-    
+
     .logo {
         background-image: url("img/content/logo200transp.png");
         display: block;
