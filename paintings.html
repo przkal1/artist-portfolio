@@ -46,7 +46,7 @@
                 <nav class="cmn-tile-nav nav-sub">
                     <ul class="clearfix">
                         <li class="colour-7"><a href="paintings.html">paintings</a></li>
-                        <li class="colour-7"><a href="design.html">graphic art</a></li>
+                        <li class="colour-7"><a href="graphic.html">graphic art</a></li>
                         <li class="colour-7"><a href="shows.html">reliefs</a></li>
                         <li class="colour-7"><a href="interior.html">sketches</a></li>
                         <li class="colour-7"><a href="aboutme.html">video</a></li>
@@ -54,120 +54,12 @@
                 </nav>
             </div>
         </div>
-        <div class="gallery-title">
-            Graphics
-        </div>
-        <div class="gallery-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-        <div id="artGallery" class="gallery">
-            <a href="img/content/art/graphics/1.jpg">
-                    <img class="img-responsive" src="img/content/art/graphics/1.jpg">
-                    <div class="demo-gallery-poster">
-                        <img src="img/zoom.png">
-                    </div>
-                </a>
 
-            <a href="img/content/art/graphics/2.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/2.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/3.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/3.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/4.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/4.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/5.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/5.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/6.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/6.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/7.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/7.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/8.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/8.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/9.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/9.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/10.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/10.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/11.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/11.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/12.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/12.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/13.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/13.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-
-            <a href="img/content/art/graphics/14.jpg">
-                        <img class="img-responsive" src="img/content/art/graphics/14.jpg">
-                        <div class="demo-gallery-poster">
-                            <img src="img/zoom.png">
-                        </div>
-                    </a>
-        </div>
-
-        <div class="gallery-title">
-            Paintings
-        </div>
         <div class="gallery-description">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
             survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
         </div>
-        <div id="paintingsGallery" class="gallery">
+        <div id="paintings-gallery" class="gallery">
             <a href="img/content/art/paintings/painting1.jpg">
                     <img class="img-responsive" src="img/content/art/paintings/painting1.jpg">
                     <div class="demo-gallery-poster">
@@ -303,7 +195,7 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var $animThumb = $('#artGallery');
+                var $animThumb = $('#paintings-gallery');
                 if ($animThumb.length) {
                     $animThumb.justifiedGallery({
                         border: 6,
@@ -312,20 +204,6 @@
                         rowHeight: 200
                     }).on('jg.complete', function() {
                         $animThumb.lightGallery({
-                            thumbnail: true
-                        });
-                    });
-                };
-
-                var $animThumb2 = $('#paintingsGallery');
-                if ($animThumb2.length) {
-                    $animThumb2.justifiedGallery({
-                        border: 6,
-                        captions: true,
-                        margins: 10,
-                        rowHeight: 200
-                    }).on('jg.complete', function() {
-                        $animThumb2.lightGallery({
                             thumbnail: true
                         });
                     });
@@ -340,7 +218,6 @@
                     classie.toggle(nav, "open");
                     classie.toggle(navSub, "open");
                 });
-
             });
         </script>
     </div>
