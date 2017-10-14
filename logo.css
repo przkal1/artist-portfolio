@@ -19,30 +19,24 @@
 }
 
 @media all and (min-width: 768px) {
-    .logo-container {
-        float:left;
-        width: 40%;
-        min-height: 200px;
-    }
-
     .normal-logo  {
         display: block;
-    }
-    .horizontal-logo  {
-        display: none;
+        width: 225px;
+        height: 150px;
     }
 
-    .logo {
-        background-image: url("img/content/logo200transp.png");
-        display: block;
-        height: 200px;
-        width: 300px;
-        margin: auto;
+    .horizontal-logo  {
+        display: none;
     }
 }
 
 @media all and (min-width: 1200px) {
     .logo-container {
         width: 28%;
+    }
+    .normal-logo  {
+        display: block;
+        width: 300px;
+        height: 200px;
     }
 }

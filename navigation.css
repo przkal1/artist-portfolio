@@ -15,15 +15,23 @@ nav.cmn-tile-nav li {
 }
 nav.cmn-tile-nav a {
   display: block;
-  padding: 20px;
-  font-size: 1.5em;
+  padding: 10px 0px 10px 10px;
+  font-size: 1em;
   color: #fff;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   transition: background 0.3s, transform 0.3s;
 }
 
+nav.cmn-tile-nav.nav-sub a {
+  text-align: center
+}
 nav.cmn-tile-nav a:hover {
-  transform: translateX(20px);
+  transform: translateX(10px);
+}
+
+nav.cmn-tile-nav.nav-sub a:hover {
+  transform: translateX(0px);
+    transform: translateY(-5px);
 }
 
 nav.cmn-tile-nav  a {
@@ -88,7 +96,7 @@ nav.cmn-tile-nav li.colour-6:hover a {
 
 nav.cmn-tile-nav li.colour-7,
 nav.cmn-tile-nav li.colour-7 a {
-  background-color: #0D002C;
+  background-color: #1b005b;
 }
 nav.cmn-tile-nav li.colour-7:hover,
 nav.cmn-tile-nav li.colour-7:hover a {
@@ -105,13 +113,23 @@ nav.cmn-tile-nav a {
     display: block;
   }
   nav.cmn-tile-nav li {
-    width: 50%;
+    width: 33.33%;
     float: left;
+  }
+
+  nav.cmn-tile-nav.nav-sub li {
+    width: 20%;
+    float: left;
+  }
+
+  nav.cmn-tile-nav a {
+    font-size: 1em;
   }
 }
 
 @media all and (min-width: 768px) {
   nav.cmn-tile-nav li {
+    overflow: visible;
     width: 16.66%;
   }
 
@@ -121,25 +139,24 @@ nav.cmn-tile-nav a {
 
   nav.cmn-tile-nav a {
     text-align: center;
-    padding: 20px 5px 15px 5px;
-    font-size: 1em;
+    padding: 30px 5px 25px 5px;
+  }
+
+  nav.cmn-tile-nav a:hover {
+    transform: translateX(0);
+    transform: translateY(10px);
   }
 
   nav.cmn-tile-nav.nav-sub a {
     padding: 5px 5px 5px 5px;
   }
-
-  nav.cmn-tile-nav a:hover {
+  nav.cmn-tile-nav.nav-sub a:hover {
     transform: translateX(0);
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 
 @media all and (min-width: 1200px) {
-  nav.cmn-tile-nav  {
-    margin-bottom: 40px;
-  }
-
   nav.cmn-tile-nav li {
     overflow: visible;
     width: 16.66%;
@@ -163,7 +180,7 @@ nav.cmn-tile-nav a {
   }
 
   nav.cmn-tile-nav.nav-sub a:hover {
-    transform: translateY(10px);
+    transform: translateY(-10px);
   }
 }
 

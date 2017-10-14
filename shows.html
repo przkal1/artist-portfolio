@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Monika Krasoń - Contemporary Artist</title>
-        <link href="css/lightgallery.css" rel="stylesheet">
-        <link href="css/justifiedGallery.min.css" rel="stylesheet">
-        
-        <link href="styles.css" rel="stylesheet">
-        <link href="art.css" rel="stylesheet">
-        <link href="navigation.css" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container" role="main">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Monika Krasoń - Contemporary Artist</title>
+
+    <link href="css/lightgallery.css" rel="stylesheet">
+    <link href="css/justifiedGallery.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="navigation.css" rel="stylesheet">
+    <link href="logo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container" role="main">
+        <div class="top-section">
             <div class="logo-container">
-                <a href="main.html">
-                    <img src="img/content/logo100h.jpg"></img>
-                </a>
+                <div class="logo-nav">
+                    <a href="main.html">
+                        <img class="normal-logo" src="img/content/logo200transp.png"></img>
+                        <img class="horizontal-logo" src="img/content/logo_horizontal.png"></img>
+                    </a>
+                    <a href="#" class="nav-toggle btn btn-info">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                </div>
             </div>
-            
-            <a href="#" class="nav-toggle">Toggle Navigation</a>
-            <div  class="second">
+            <div class="menu-container">
                 <nav class="cmn-tile-nav">
-                  <ul class="clearfix">
-                    <li class="colour-1"><a href="art.html">ART</a></li>
-                    <li class="colour-2"><a href="design.html">DESIGN</a></li>
-                    <li class="colour-3"><a href="shows.html">SHOWS</a></li>
-                    <li class="colour-4"><a href="interior.html">INTERIOR</a></li>
-                    <li class="colour-5"><a href="aboutme.html">ABOUT ME</a></li>
-                    <li class="colour-6"><a href="contact.html">CONTACT</a></li>
-                  </ul>
+                    <ul class="clearfix">
+                        <li class="colour-1"><a href="art.html">ART</a></li>
+                        <li class="colour-2"><a href="design.html">DESIGN</a></li>
+                        <li class="colour-3"><a href="shows.html">SHOWS</a></li>
+                        <li class="colour-4"><a href="interior.html">INTERIOR</a></li>
+                        <li class="colour-5"><a href="aboutme.html">ABOUT ME</a></li>
+                        <li class="colour-6"><a href="contact.html">CONTACT</a></li>
+                    </ul>
                 </nav>
             </div>
+        </div>
 
-            <div class="creation">
-                EXPERIENCING A PROCESS OF CREATION :)
-            </div>
-            
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="js/lightgallery.min.js"></script>
-            <script src="js/lg-thumbnail.min.js"></script>
-            <script src="js/jquery.justifiedGallery.min.js"></script>
-            <script src="js/classie.js"></script>
-            
-            <script type="text/javascript">     
-            $( document ).ready(function() {
+        <div class="creation">
+            EXPERIENCING A PROCESS OF CREATION :)
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/lightgallery.min.js"></script>
+        <script src="js/lg-thumbnail.min.js"></script>
+        <script src="js/jquery.justifiedGallery.min.js"></script>
+        <script src="js/classie.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
                 var $animThumb = $('#artGallery');
                 if ($animThumb.length) {
                     $animThumb.justifiedGallery({
@@ -60,7 +70,7 @@
                         });
                     });
                 };
-                
+
                 var $animThumb2 = $('#paintingsGallery');
                 if ($animThumb2.length) {
                     $animThumb2.justifiedGallery({
@@ -74,15 +84,17 @@
                         });
                     });
                 };
-                
-                var nav = document.querySelector("nav.cmn-tile-nav"), nav_toggle = document.querySelector("a.nav-toggle");
 
-                nav_toggle.addEventListener("click", function(e){
+                var nav = document.querySelector("nav.cmn-tile-nav"),
+                    nav_toggle = document.querySelector("a.nav-toggle");
+
+                nav_toggle.addEventListener("click", function(e) {
                     e.preventDefault();
                     classie.toggle(nav, "open");
                 });
             });
-            </script>
-        </div>
-    </body>
+        </script>
+    </div>
+</body>
+
 </html>

@@ -5,21 +5,38 @@ body {
 }
 
 .main-container {
-  width: 85%;
+  width: 90%;
   max-width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+
   margin-right: auto;
   margin-left: auto;
 }
 
 .top-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
+@media all and (min-width: 768px) {
+  .top-section {
+    flex-direction: row;
+  }
+
+  .menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+
 .menu-container {
-  width: 100%
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gallery-description {
