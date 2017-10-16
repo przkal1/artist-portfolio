@@ -8,8 +8,20 @@
     src: url("../fonts/Myriad Pro Regular.ttf");
 }
 
+nav.cmn-tile-nav.ng-hide {
+  opacity: 0;
+  transform: translate(0px, -5px);
+}
+
+nav.cmn-tile-nav.ng-hide-add,
+nav.cmn-tile-nav.ng-hide-remove {
+  transition: all linear 0.2s;
+}
+
 nav.cmn-tile-nav {
   display: none;
+  transform: translate(0, 0);
+  opacity: 1;
 }
 nav.cmn-tile-nav.open {
   display: block;
@@ -119,66 +131,70 @@ nav.cmn-tile-nav a {
 }
 
 @media all and (min-width: 480px) {
-  nav.cmn-tile-nav {
-    display: block;
-  }
-  nav.cmn-tile-nav li {
-    width: 33.33%;
-    float: left;
-  }
+    nav.cmn-tile-nav {
+        display: block;
+    }
+    nav.cmn-tile-nav li {
+        width: 33.33%;
+        float: left;
+    }
 
-  nav.cmn-tile-nav.nav-sub li {
-    width: 20%;
-    float: left;
-  }
+    nav.cmn-tile-nav.nav-sub li {
+        width: 20%;
+        float: left;
+    }
 
-  nav.cmn-tile-nav a {
-    font-size: 1.3em;
-  }
-  nav.cmn-tile-nav.nav-sub a {
-    font-size: 1em;
-  }
+    nav.cmn-tile-nav a {
+        font-size: 1.3em;
+    }
+    nav.cmn-tile-nav.nav-sub a {
+        font-size: 1em;
+    }
 }
 
 @media all and (min-width: 768px) {
-  nav.cmn-tile-nav li {
-    overflow: visible;
-    width: 16.66%;
-  }
+    nav.cmn-tile-nav.ng-hide {
+      opacity: 0;
+      transform: translate(0px, -10px);
+    }
+    nav.cmn-tile-nav li {
+        overflow: visible;
+        width: 16.66%;
+    }
 
-  nav.cmn-tile-nav.nav-sub li {
-    width: 20%;
-  }
+    nav.cmn-tile-nav.nav-sub li {
+        width: 20%;
+    }
 
-  nav.cmn-tile-nav a {
-    text-align: center;
-    padding: 30px 5px 25px 5px;
-  }
+    nav.cmn-tile-nav a {
+        text-align: center;
+        padding: 30px 5px 25px 5px;
+    }
 
-  nav.cmn-tile-nav.nav-sub a {
-    padding: 5px 5px 5px 5px;
-  }
+    nav.cmn-tile-nav.nav-sub a {
+        padding: 5px 5px 5px 5px;
+    }
 }
 
 @media all and (min-width: 1200px) {
-  nav.cmn-tile-nav li {
-    overflow: visible;
-    width: 16.66%;
-  }
+    nav.cmn-tile-nav li {
+        overflow: visible;
+        width: 16.66%;
+    }
 
-  nav.cmn-tile-nav.nav-sub li {
-    width: 20%;
-  }
+    nav.cmn-tile-nav.nav-sub li {
+        width: 20%;
+    }
 
-  nav.cmn-tile-nav a {
-    padding: 35px 5px 30px 5px;
-    font-size: 2em;
-  }
+    nav.cmn-tile-nav a {
+        padding: 35px 5px 30px 5px;
+        font-size: 2em;
+    }
 
-  nav.cmn-tile-nav.nav-sub a {
-    padding: 5px 5px 5px 5px;
-    font-size: 1.5em;
-  }
+    nav.cmn-tile-nav.nav-sub a {
+        padding: 5px 5px 5px 5px;
+        font-size: 1.5em;
+    }
 }
 
 button.nav-toggle {

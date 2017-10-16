@@ -1,4 +1,4 @@
-var artistPortfolioApp = angular.module('artistPortfolioApp', ["ngRoute"]);
+var artistPortfolioApp = angular.module('artistPortfolioApp', ["ngRoute", "ngAnimate"]);
 
 artistPortfolioApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
