@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="artistPortfolioApp" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Monika Krasoń - Contemporary Artist</title>
+
+    <link href="css/lightgallery.css" rel="stylesheet">
+    <link href="css/justifiedGallery.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="navigation.css" rel="stylesheet">
+    <link href="logo.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body class="ng-cloak" ng-controller="mainController">
+    <div class="main-container" role="main">
+        <div class="top-section">
+            <div class="logo-container">
+                <div class="logo-nav">
+                    <a href="main.html">
+                        <img class="normal-logo" src="img/content/logo200transp.png"></img>
+                        <img class="horizontal-logo" src="img/content/logo_horizontal.png"></img>
+                    </a>
+                    <a href="#" class="nav-toggle btn btn-info">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-container">
+                <nav class="cmn-tile-nav">
+                    <ul class="clearfix">
+                        <li class="colour-1"><a href="#paintings">ART</a></li>
+                        <li class="colour-2"><a href="#design">DESIGN</a></li>
+                        <li class="colour-3"><a href="#shows">SHOWS</a></li>
+                        <li class="colour-4"><a href="#/interior">INTERIOR</a></li>
+                        <li class="colour-5"><a href="#/aboutme">ABOUT ME</a></li>
+                        <li class="colour-6"><a href="#/contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <nav class="cmn-tile-nav nav-sub">
+                    <ul class="clearfix">
+                        <li class="colour-7"><a href="paintings.html">paintings</a></li>
+                        <li class="colour-7"><a href="design.html">graphic art</a></li>
+                        <li class="colour-7"><a href="shows.html">reliefs</a></li>
+                        <li class="colour-7"><a href="interior.html">sketches</a></li>
+                        <li class="colour-7"><a href="aboutme.html">video</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <ng-view></ng-view>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/lightgallery.min.js"></script>
+        <script src="js/lg-thumbnail.min.js"></script>
+        <script src="js/jquery.justifiedGallery.min.js"></script>
+        <script src="js/classie.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $animThumb = $('#artGallery');
+                if ($animThumb.length) {
+                    $animThumb.justifiedGallery({
+                        border: 6,
+                        captions: true,
+                        margins: 10,
+                        rowHeight: 200
+                    }).on('jg.complete', function() {
+                        $animThumb.lightGallery({
+                            thumbnail: true
+                        });
+                    });
+                };
+
+                var $animThumb2 = $('#paintingsGallery');
+                if ($animThumb2.length) {
+                    $animThumb2.justifiedGallery({
+                        border: 6,
+                        captions: true,
+                        margins: 10,
+                        rowHeight: 200
+                    }).on('jg.complete', function() {
+                        $animThumb2.lightGallery({
+                            thumbnail: true
+                        });
+                    });
+                };
+
+                var nav = document.querySelector("nav.cmn-tile-nav"),
+                    nav_toggle = document.querySelector("a.nav-toggle");
+                var navSub = document.querySelector("nav.cmn-tile-nav.nav-sub");
+
+                nav_toggle.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    classie.toggle(nav, "open");
+                    classie.toggle(navSub, "open");
+                });
+
+            });
+        </script>
+    </div>
+</body>
+</html>
