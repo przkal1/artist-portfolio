@@ -12,14 +12,30 @@
     <link href="css/justifiedGallery.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="styles.css" rel="stylesheet">
-    <link href="navigation.css" rel="stylesheet">
-    <link href="logo.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/navigation.css" rel="stylesheet">
+    <link href="styles/logo.css" rel="stylesheet">
 
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+
     <script type="text/javascript" src="app.js"></script>
+    <!-- controllers -->
+    <script type="text/javascript" src="controllers/mainController.js"></script>
+    <script type="text/javascript" src="controllers/paintingsController.js"></script>
+    <script type="text/javascript" src="controllers/graphicController.js"></script>
+    <script type="text/javascript" src="controllers/reliefsController.js"></script>
+    <script type="text/javascript" src="controllers/sketchesController.js"></script>
+    <script type="text/javascript" src="controllers/videoController.js"></script>
+    <script type="text/javascript" src="controllers/designController.js"></script>
+    <script type="text/javascript" src="controllers/showsController.js"></script>
+    <script type="text/javascript" src="controllers/interiorController.js"></script>
+    <script type="text/javascript" src="controllers/contactController.js"></script>
 </head>
 
 <body class="ng-cloak" ng-controller="mainController">
@@ -31,84 +47,34 @@
                         <img class="normal-logo" src="img/content/logo200transp.png"></img>
                         <img class="horizontal-logo" src="img/content/logo_horizontal.png"></img>
                     </a>
-                    <a href="#" class="nav-toggle btn btn-info">
+                    <button class="nav-toggle btn btn-info" ng-click="toggleMenu()">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="menu-container">
-                <nav class="cmn-tile-nav">
+                <nav class="cmn-tile-nav" ng-class="mobMenuToggle ? 'open' : ''">
                     <ul class="clearfix">
                         <li class="colour-1"><a href="#paintings">ART</a></li>
                         <li class="colour-2"><a href="#design">DESIGN</a></li>
                         <li class="colour-3"><a href="#shows">SHOWS</a></li>
-                        <li class="colour-4"><a href="#/interior">INTERIOR</a></li>
-                        <li class="colour-5"><a href="#/aboutme">ABOUT ME</a></li>
-                        <li class="colour-6"><a href="#/contact">CONTACT</a></li>
+                        <li class="colour-4"><a href="#interior">INTERIOR</a></li>
+                        <li class="colour-5"><a href="#about">ABOUT ME</a></li>
+                        <li class="colour-6"><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
-                <nav class="cmn-tile-nav nav-sub">
+                <nav class="cmn-tile-nav nav-sub" ng-show="artSubmenuVisible" ng-class="mobMenuToggle ? 'open' : ''">
                     <ul class="clearfix">
-                        <li class="colour-7"><a href="paintings.html">paintings</a></li>
-                        <li class="colour-7"><a href="design.html">graphic art</a></li>
-                        <li class="colour-7"><a href="shows.html">reliefs</a></li>
-                        <li class="colour-7"><a href="interior.html">sketches</a></li>
-                        <li class="colour-7"><a href="aboutme.html">video</a></li>
+                        <li class="colour-7"><a href="#paintings">paintings</a></li>
+                        <li class="colour-7"><a href="#graphic">graphic art</a></li>
+                        <li class="colour-7"><a href="#reliefs">reliefs</a></li>
+                        <li class="colour-7"><a href="#sketches">sketches</a></li>
+                        <li class="colour-7"><a href="#video">video</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-
         <ng-view></ng-view>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/lightgallery.min.js"></script>
-        <script src="js/lg-thumbnail.min.js"></script>
-        <script src="js/jquery.justifiedGallery.min.js"></script>
-        <script src="js/classie.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var $animThumb = $('#artGallery');
-                if ($animThumb.length) {
-                    $animThumb.justifiedGallery({
-                        border: 6,
-                        captions: true,
-                        margins: 10,
-                        rowHeight: 200
-                    }).on('jg.complete', function() {
-                        $animThumb.lightGallery({
-                            thumbnail: true
-                        });
-                    });
-                };
-
-                var $animThumb2 = $('#paintingsGallery');
-                if ($animThumb2.length) {
-                    $animThumb2.justifiedGallery({
-                        border: 6,
-                        captions: true,
-                        margins: 10,
-                        rowHeight: 200
-                    }).on('jg.complete', function() {
-                        $animThumb2.lightGallery({
-                            thumbnail: true
-                        });
-                    });
-                };
-
-                var nav = document.querySelector("nav.cmn-tile-nav"),
-                    nav_toggle = document.querySelector("a.nav-toggle");
-                var navSub = document.querySelector("nav.cmn-tile-nav.nav-sub");
-
-                nav_toggle.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    classie.toggle(nav, "open");
-                    classie.toggle(navSub, "open");
-                });
-
-            });
-        </script>
     </div>
 </body>
 </html>

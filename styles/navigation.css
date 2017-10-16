@@ -1,11 +1,11 @@
 @font-face {
     font-family: "MyriadCondensed";
-    src: url("fonts/Myriad Pro Condensed.ttf");
+    src: url("../fonts/Myriad Pro Condensed.ttf");
 }
 
 @font-face {
     font-family: "MyriadRegular";
-    src: url("fonts/Myriad Pro Regular.ttf");
+    src: url("../fonts/Myriad Pro Regular.ttf");
 }
 
 nav.cmn-tile-nav {
@@ -21,14 +21,14 @@ nav.cmn-tile-nav ul {
 nav.cmn-tile-nav li {
   display: block;
   overflow: hidden;
-  transition: background 0.3s;
+  transition: background 0.1s;
 }
 nav.cmn-tile-nav a {
   display: block;
   padding: 10px 0px 10px 10px;
   font-size: 1em;
   color: #fff;
-  transition: background 0.3s, transform 0.3s, color 0.3s;
+  transition: background 0.1s, transform 0.1s, color 0.1s;
   font-family: "MyriadCondensed";
 }
 
@@ -37,7 +37,7 @@ nav.cmn-tile-nav.nav-sub a {
   font-family: "MyriadRegular";
 }
 
-nav.cmn-tile-nav  a {
+nav.cmn-tile-nav a {
     text-decoration: none;
 }
 
@@ -181,17 +181,17 @@ nav.cmn-tile-nav a {
   }
 }
 
-a.nav-toggle {
+button.nav-toggle {
   text-align: center;
   float:right;
 }
 
-a.nav-toggle:hover {
+button.nav-toggle:hover {
   background-color: #c8d2dc;
 }
 /* the breakpoint same as above */
 @media all and (min-width: 480px) {
-  a.nav-toggle {
+  button.nav-toggle {
     display: none;
   }
 }
