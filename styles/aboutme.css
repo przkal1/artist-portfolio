@@ -1,0 +1,17 @@
+p {
+    font-size: 1.5em;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.about-me {
+    max-width: 980px;
+    margin: auto;
+}
