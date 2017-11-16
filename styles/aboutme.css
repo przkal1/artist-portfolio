@@ -2,16 +2,40 @@ p {
     font-size: 1.5em;
     text-align: justify;
     text-justify: inter-word;
+    margin-bottom: 0px;
+}
+
+p:not(:last-of-type){
     margin-bottom: 20px;
-    margin-top: 40px;
 }
 
 img {
     display: block;
     margin: auto;
+    vertical-align: middle;
 }
 
 .about-me {
-    max-width: 980px;
+    max-width: 1080px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+@media all and (min-width: 1080px) {
+    .about-me {
+        flex-direction: row;
+    }
+}
+
+.about-me-text {
+    margin-right: 20px;
+}
+
+.about-me-photos {
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }

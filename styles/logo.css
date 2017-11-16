@@ -6,11 +6,6 @@
     display: none;
 }
 
-.horizontal-logo {
-    /*display: block;
-    margin: auto;*/
-}
-
 .logo-nav{
   display: flex;
   flex-direction: row;
