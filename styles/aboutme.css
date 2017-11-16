@@ -27,10 +27,10 @@ img {
     .about-me {
         flex-direction: row;
     }
-}
-
-.about-me-text {
-    margin-right: 20px;
+    
+    .about-me-text {
+        margin-right: 40px;
+    }
 }
 
 .about-me-photos {
