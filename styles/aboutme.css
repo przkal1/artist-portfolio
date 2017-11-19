@@ -1,8 +1,14 @@
+@font-face {
+    font-family: "MyriadRegular";
+    src: url("../fonts/Myriad Pro Regular.ttf");
+}
+
 p {
     font-size: 1.5em;
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 0px;
+    font-family: "MyriadRegular";
 }
 
 p:not(:last-of-type){
@@ -27,7 +33,7 @@ img {
     .about-me {
         flex-direction: row;
     }
-    
+
     .about-me-text {
         margin-right: 40px;
     }

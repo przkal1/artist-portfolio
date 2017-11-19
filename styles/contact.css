@@ -1,8 +1,9 @@
 p {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     text-justify: inter-word;
     margin-bottom: 0px;
+    font-family: "MyriadRegular";
 }
 
 p:not(:last-of-type){
@@ -13,4 +14,22 @@ p:not(:last-of-type){
     max-width: 580px;
     margin: auto;
     text-align: center;
+}
+
+@font-face {
+    font-family: "MyriadRegular";
+    src: url("../fonts/Myriad Pro Regular.ttf");
+}
+
+.social-media-links {
+    margin-top: 40px;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+a img {
+    text-decoration: none;
+    border: 0 none;
 }
