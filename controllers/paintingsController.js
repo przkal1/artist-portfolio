@@ -6,7 +6,7 @@ angular.module("artistPortfolioApp").controller('paintingsController', function(
         $gallery.justifiedGallery({
             border: 6,
             captions: true,
-            margins: 20,
+            margins: 30,
             rowHeight: 350
         }).on('jg.complete', function() {
             $gallery.lightGallery({
