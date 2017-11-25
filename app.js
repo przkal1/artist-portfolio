@@ -3,8 +3,8 @@ var artistPortfolioApp = angular.module('artistPortfolioApp', ["ngRoute", "ngAni
 artistPortfolioApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : 'pages/aboutme.html',
-            controller  : 'aboutController'
+            templateUrl : 'pages/subpages/paintings.html',
+            controller  : 'paintingsController'
         })
         .when('/paintings', {
             templateUrl : 'pages/subpages/paintings.html',
