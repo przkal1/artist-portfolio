@@ -19,10 +19,6 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  .top-section {
-    flex-direction: row;
-  }
-
   .menu-container {
     width: 100%;
     display: flex;
