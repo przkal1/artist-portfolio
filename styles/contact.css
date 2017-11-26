@@ -16,6 +16,12 @@ p:not(:last-of-type){
     text-align: center;
 }
 
+@media all and (min-width: 480px) {
+    .contact {
+        margin-top: 50px;
+    }
+}
+
 @font-face {
     font-family: "MyriadRegular";
     src: url("../fonts/Myriad Pro Regular.ttf");
