@@ -129,8 +129,12 @@ nav.cmn-tile-nav li,
 nav.cmn-tile-nav a {
   transform: translate3d(0, 0, 0);
 }
-
 @media all and (min-width: 480px) {
+    /*submenu keeps space*/
+    .ng-hide:not(.ng-hide-animate) {
+        display: block !important;
+    }
+
     nav.cmn-tile-nav {
         display: block;
     }
