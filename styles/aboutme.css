@@ -3,7 +3,7 @@
     src: url("../fonts/Myriad Pro Regular.ttf");
 }
 
-p {
+.about-me p {
     font-size: 1.5em;
     text-align: justify;
     text-justify: inter-word;
