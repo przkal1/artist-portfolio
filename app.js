@@ -18,10 +18,10 @@ artistPortfolioApp.config(function($routeProvider, $locationProvider) {
             templateUrl : 'pages/subpages/reliefs.html',
             controller  : 'reliefsController'
         })
-        .when('/sketches', {
-            templateUrl : 'pages/subpages/sketches.html',
-            controller  : 'sketchesController'
-        })
+        // .when('/sketches', {
+        //     templateUrl : 'pages/subpages/sketches.html',
+        //     controller  : 'sketchesController'
+        // })
         .when('/video', {
             templateUrl : 'pages/subpages/video.html',
             controller  : 'videoController'
