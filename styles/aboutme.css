@@ -15,7 +15,7 @@ p:not(:last-of-type){
     margin-bottom: 20px;
 }
 
-img {
+.about-me-photo img {
     display: block;
     margin: auto;
     vertical-align: middle;
