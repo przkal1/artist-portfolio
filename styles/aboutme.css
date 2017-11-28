@@ -19,10 +19,11 @@ img {
     display: block;
     margin: auto;
     vertical-align: middle;
+    margin-top: 20px;
 }
 
 .about-me {
-    max-width: 1080px;
+    max-width: 960px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -31,7 +32,7 @@ img {
 
 @media all and (min-width: 1080px) {
     .about-me {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .about-me-text {
