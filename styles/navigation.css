@@ -10,12 +10,6 @@
 
 nav.cmn-tile-nav.ng-hide {
   opacity: 0;
-  transform: translate(0px, -5px);
-}
-
-nav.cmn-tile-nav.ng-hide-add,
-nav.cmn-tile-nav.ng-hide-remove {
-  transition: all linear 0.2s;
 }
 
 nav.cmn-tile-nav {
@@ -130,21 +124,25 @@ nav.cmn-tile-nav a {
   transform: translate3d(0, 0, 0);
 }
 @media all and (min-width: 480px) {
-    /*submenu keeps space*/
-    .ng-hide:not(.ng-hide-animate) {
-        display: block !important;
-    }
-
     nav.cmn-tile-nav {
         display: block;
+    }
+    nav.cmn-tile-nav.ng-hide {
+      opacity: 0;
+      display: none;
     }
     nav.cmn-tile-nav li {
         width: 33.33%;
         float: left;
     }
 
-    nav.cmn-tile-nav.nav-sub li {
-        width: 25%; //temporarily
+    #designSubmenu.cmn-tile-nav.nav-sub li {
+        width: 25%;
+        float: left;
+    }
+
+    #artSubmenu.cmn-tile-nav.nav-sub li {
+        width: 25%;
         float: left;
     }
 
@@ -159,15 +157,20 @@ nav.cmn-tile-nav a {
 @media all and (min-width: 768px) {
     nav.cmn-tile-nav.ng-hide {
       opacity: 0;
-      transform: translate(0px, -10px);
+      display: none !important;
     }
+
     nav.cmn-tile-nav li {
         overflow: visible;
         width: 16.66%;
     }
 
-    nav.cmn-tile-nav.nav-sub li {
-        width: 25%; //temporarily
+    #designSubmenu.cmn-tile-nav.nav-sub li {
+        width: 25%;
+    }
+
+    #artSubmenu.cmn-tile-nav.nav-sub li {
+        width: 25%;
     }
 
     nav.cmn-tile-nav a {
@@ -186,8 +189,12 @@ nav.cmn-tile-nav a {
         width: 16.66%;
     }
 
-    nav.cmn-tile-nav.nav-sub li {
-        width: 25%; //temporarily
+    #designSubmenu.cmn-tile-nav.nav-sub li {
+        width: 25%;
+    }
+
+    #artSubmenu.cmn-tile-nav.nav-sub li {
+        width: 25%;
     }
 
     nav.cmn-tile-nav a {

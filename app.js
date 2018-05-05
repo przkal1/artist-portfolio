@@ -3,28 +3,40 @@ var artistPortfolioApp = angular.module('artistPortfolioApp', ["ngRoute", "ngAni
 artistPortfolioApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : 'pages/subpages/paintings.html',
+            templateUrl : 'pages/art/paintings.html',
             controller  : 'paintingsController'
         })
         .when('/paintings', {
-            templateUrl : 'pages/subpages/paintings.html',
+            templateUrl : 'pages/art/paintings.html',
             controller  : 'paintingsController'
         })
         .when('/graphic', {
-            templateUrl : 'pages/subpages/graphic.html',
+            templateUrl : 'pages/art/graphic.html',
             controller  : 'graphicController'
         })
         .when('/reliefs', {
-            templateUrl : 'pages/subpages/reliefs.html',
+            templateUrl : 'pages/art/reliefs.html',
             controller  : 'reliefsController'
         })
-        // .when('/sketches', {
-        //     templateUrl : 'pages/subpages/sketches.html',
-        //     controller  : 'sketchesController'
-        // })
         .when('/video', {
-            templateUrl : 'pages/subpages/video.html',
+            templateUrl : 'pages/art/video.html',
             controller  : 'videoController'
+        })
+        .when('/posters', {
+            templateUrl : 'pages/design/posters.html',
+            controller  : 'postersController'
+        })
+        .when('/fliers', {
+            templateUrl : 'pages/design/fliers.html',
+            controller  : 'fliersController'
+        })
+        .when('/textile', {
+            templateUrl : 'pages/design/textile.html',
+            controller  : 'textileController'
+        })
+        .when('/other', {
+            templateUrl : 'pages/design/other.html',
+            controller  : 'otherController'
         })
         .when('/design', {
             templateUrl : 'pages/design.html',

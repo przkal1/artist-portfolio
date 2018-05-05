@@ -48,7 +48,12 @@
     <script type="text/javascript" src="controllers/reliefsController.js"></script>
     <script type="text/javascript" src="controllers/sketchesController.js"></script>
     <script type="text/javascript" src="controllers/videoController.js"></script>
-    <script type="text/javascript" src="controllers/designController.js"></script>
+
+    <script type="text/javascript" src="controllers/postersController.js"></script>
+    <script type="text/javascript" src="controllers/fliersController.js"></script>
+    <script type="text/javascript" src="controllers/textileController.js"></script>
+    <script type="text/javascript" src="controllers/otherController.js"></script>
+
     <script type="text/javascript" src="controllers/showsController.js"></script>
     <script type="text/javascript" src="controllers/interiorController.js"></script>
     <script type="text/javascript" src="controllers/aboutController.js"></script>
@@ -71,20 +76,27 @@
                 <nav class="cmn-tile-nav" ng-class="mobMenuToggle ? 'open' : ''">
                     <ul class="clearfix">
                         <li class="colour-1"><a href="#paintings">ART</a></li>
-                        <li class="colour-2"><a href="#design">DESIGN</a></li>
+                        <li class="colour-2"><a href="#posters">DESIGN</a></li>
                         <li class="colour-3"><a href="#shows">SHOWS</a></li>
                         <li class="colour-4"><a href="#interior">INTERIOR</a></li>
                         <li class="colour-5"><a href="#about">ABOUT ME</a></li>
                         <li class="colour-6"><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
-                <nav class="cmn-tile-nav nav-sub" ng-show="artSubmenuVisible" ng-class="mobMenuToggle ? 'open' : ''">
+                <nav id="artSubmenu" class="cmn-tile-nav nav-sub" ng-show="artSubmenuVisible" ng-class="mobMenuToggle ? 'open' : ''">
                     <ul class="clearfix">
                         <li class="colour-7"><a href="#paintings">paintings</a></li>
                         <li class="colour-7"><a href="#graphic">graphic art</a></li>
                         <li class="colour-7"><a href="#reliefs">reliefs</a></li>
-                        <!-- <li class="colour-7"><a href="#sketches">sketches</a></li> -->
                         <li class="colour-7"><a href="#video">video</a></li>
+                    </ul>
+                </nav>
+                <nav id="designSubmenu" class="cmn-tile-nav nav-sub" ng-show="designSubmenuVisible" ng-class="mobMenuToggle ? 'open' : ''">
+                    <ul class="clearfix">
+                        <li class="colour-7"><a href="#posters">posters</a></li>
+                        <li class="colour-7"><a href="#fliers">fliers</a></li>
+                        <li class="colour-7"><a href="#textile">textile/fashion</a></li>
+                        <li class="colour-7"><a href="#other">other</a></li>
                     </ul>
                 </nav>
             </div>
